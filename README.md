@@ -1,4 +1,6 @@
-# Showcase squid 04: network-wide capture of Mint(address,address,uint256)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bertux/arthera-squid-usdc)
+
+# Squid example for ABI usage on Arthera: network-wide capture of Mint(address,address,uint256)
 
 This squid captures all `Mint(address,address,uint256)` events on Arthera and scrapes the transactions that caused mints, noting the amount of gas spent on each of them. One contract that emits these events is the [USDC token contract](https://explorer.arthera.net/token/0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B?tab=contract); its ABI is used to make a Typescript wrapper that supplies a topic0 constant and an event data decoder.
 
